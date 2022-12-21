@@ -1,0 +1,4 @@
+1 Apfel
+2 Mehl
+3 Zucker
+4 Butter
