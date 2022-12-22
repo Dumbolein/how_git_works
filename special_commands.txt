@@ -8,4 +8,4 @@ Local Reset
 - git reset --hard <revision> (remove commits and files)
 - git reset --soft <revision> (Keep changes locally and in index)
 - git reset <revision> (Keep changes but remove commits and index)
-- git reset HEAD (Remove all local changes and index)
+- git reset --hard HEAD (Remove all local changes and index)
