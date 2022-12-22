@@ -20,4 +20,8 @@ Local Stash
 
 Merge Conflict
 - git merge --abort
-- 
+- Or edit conflicted files and 'git add' them. Then 'git commit' the merge without message.
+
+Hunks
+- Option --patch on commands: add, checkout, stash, reset
+
