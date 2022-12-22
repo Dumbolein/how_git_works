@@ -1,0 +1,4 @@
+Unstage:
+- git rm --cached <file>
+Remove the file completely
+- git rm -f <file>
