@@ -25,3 +25,9 @@ Merge Conflict
 Hunks
 - Option --patch on commands: add, checkout, stash, reset
 
+History
+- git log --graph --decorate --oneline
+- git show <revision>
+- git blame <file>
+- git diff HEAD HEAD~2
+- git log --grep <term>
