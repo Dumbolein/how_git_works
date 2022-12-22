@@ -9,9 +9,15 @@ Local Reset
 - git reset --soft <revision> (Keep changes locally and in index)
 - git reset <revision> (Keep changes but remove commits and index)
 - git reset --hard HEAD (Remove all local changes and index)
+- git checkout HEAD <file> (Remove local changes in file and index)
 
-Git Stash
+
+Local Stash
 - git stash --include-untracked
 - git stash apply
 - git stash list
 - git stash clear
+
+Merge Conflict
+- git merge --abort
+- 
