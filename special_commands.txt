@@ -25,9 +25,33 @@ Merge Conflict
 Hunks
 - Option --patch on commands: add, checkout, stash, reset
 
-History
+Local History exploration
 - git log --graph --decorate --oneline
 - git show <revision>
 - git blame <file>
 - git diff HEAD HEAD~2
 - git log --grep <term>
+- git reflog (see resetted commits) 
+
+Local History changes
+- git commit --amend (last commit only)
+- interactive rebase (only locally - never with pushed commits!)
+
+Shared History changes
+- git revert (caution with merge commits)
+- git filter-repo to remove large files
+
+Git Workflow Pattern
+- Pull request model
+	- centralized repo
+	- maintainers have push rights
+	- contributors have to create pull requests
+- Branching design
+	- 1 stable release branch
+	- 1 mostly stable integration branch to merge periodically and only once stable into release
+	- unstable feature branches to merge into integration branch once done
+	- hotfix branches to merge directly into both integration and release branches
+- Constraints / git hooks
+	- Don't push on broken build
+	- Don't push on release branch - only pull request
+	- don't rebase only merge
